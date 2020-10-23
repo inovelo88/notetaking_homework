@@ -13,6 +13,7 @@ const getNotes = () => {
     url: "/api/notes",
     method: "GET",
   });
+  console.log("Get Index.js")
 };
 
 // A function for saving a note to the db
@@ -104,7 +105,7 @@ const handleRenderSaveBtn = function () {
 // Render's the list of note titles
 const renderNoteList = (notes) => {
   $noteList.empty();
-
+console.log("Get", notes)
   const noteListItems = [];
 
   // Returns jquery object for li with given text and delete button
